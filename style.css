@@ -88,6 +88,7 @@ figcaption {
     text-align: center;
     background-color:rgb(255, 195, 43);
     color: white;
+    border-radius: 0.5rem;
 }
 
 .receipe {
