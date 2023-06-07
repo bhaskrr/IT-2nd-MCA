@@ -73,9 +73,10 @@ header > p {
     width: fit-content;
     height: auto;
     border: none;
+    width: 100%;
 }
 
-/* .showcase > figure > */figcaption { 
+figcaption { 
     padding: 5px;
     font-family: monospace;
     font-size: large;
