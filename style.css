@@ -59,9 +59,9 @@ header > p {
     color:blueviolet;
 }
 
-.showcase > figure > img {
+/* .showcase > figure > img {
     width: 100%;
-}
+} */
 
 .showcase {
     display: grid;
