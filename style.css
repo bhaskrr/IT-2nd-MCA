@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+
+
+body {
+    padding: 0 5%;
+}
+
+header {
+    font-size: x-large;
+}
+
+header > .nav > h2, marquee {
+    color:blueviolet;
+    font-family: monospace;
+    font-weight: lighter;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a {
+    color: black;
+    display: inline-block;
+    font-family: monospace;
+    font-size: large;
+    margin: 0 10px;
+}
+
+h2 > span, footer > h4 {
+    font-family: 'Cedarville Cursive', cursive;
+    
+}
+
+header > p {
+    text-align: center;
+    line-height: 0.1;
+}
+
+.bio {
+    font-family: monospace;
+    font-size: large;
+}
+.styledText {
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: x-large;
+    font-weight: lighter;
+    color:blueviolet;
+}
+
+.showcase > figure > img {
+    width: 100%;
+}
+
+.showcase {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+figure {
+    display: block;
+    border: 1px dotted gray;
+}
+
+/* .showcase > figure > */figcaption { 
+    padding: 5px;
+    font-family: monospace;
+    font-size: large;
+    text-align: center;
+    background-color:rgb(255, 195, 43);
+    color: white;
+}
+
+.receipe {
+    display: flex;
+    justify-content: center;
+}
+
+.receipe > a:hover {
+    text-decoration: none;
+}
+
+.receipe > a > figure {
+    display: inline-block;
+    width: fit-content;
+    height: auto;
+    border: none;
+}
+
+.receipe > a > figure > img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.receipe > a > figure > figcaption {
+    text-align: center;
+}
+
+footer {
+    background-color: gray;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+footer > section {
+    padding: 1% 3%;
+}
+
+footer > h4 {
+    margin: 0;
+    /* border: 1px solid red; */
+    font-size: 10rem;
+    font-weight: lighter;
+    color:rgb(255, 195, 43);
+}
+
+footer h5 , footer p {
+    font-family: monospace;
+    font-size: xx-large;
+    color: white;
+}
+
+#name {
+    padding: 1%;
+    width: 15rem;
+}
+
+#mail {
+    padding: 1%;
+    width: 11rem;
+}
+
+#go {
+    background-color:rgb(255, 195, 43);
+    color: white;
+    font-weight: bolder;
+    border: none;
+    padding: 1%;
+    width: 3.5rem;
+}
+
+form > section {
+    display: flex;
+    justify-content: center;
+}
+
+marquee {
+    font-size: x-large;
+}
