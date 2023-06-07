@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
 
-
-
 body {
-    padding: 0 5%;
+    padding: 0 3%;
 }
 
 header {
-    font-size: x-large;
+    font-size: 0.8rem;
+}
+
+header > p {
+    margin: 0;
 }
 
 header > .nav > h2, marquee {
@@ -23,7 +25,6 @@ header > .nav > h2, marquee {
 
 nav {
     display: flex;
-    justify-content: space-around;
     align-items: center;
 }
 
@@ -36,12 +37,11 @@ nav a {
     display: inline-block;
     font-family: monospace;
     font-size: large;
-    margin: 0 10px;
+    margin: 0 0.3rem;
 }
 
 h2 > span, footer > h4 {
     font-family: 'Cedarville Cursive', cursive;
-    
 }
 
 header > p {
@@ -59,22 +59,27 @@ header > p {
     color:blueviolet;
 }
 
-.showcase > figure > img {
-    width: 100%;
-}
-
 .showcase {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    display: flex;
+    justify-content: space-around;
 }
 
 .showcase > figure {
-    display: inline-block;
-/*     width: fit-content; */
-    height: auto;
-    border: none;
-/*     width: 100%; */
- }
+    width: 70%;
+    margin: 0 auto;
+}
+
+.showcase > figure > img {
+    width: 100%;
+    border-radius: 10%;
+    margin: 0 auto;
+}
+
+figure {
+    margin: 0;
+    display: block;
+    /* border: 1px dotted gray; */
+}
 
 figcaption { 
     padding: 5px;
@@ -87,7 +92,7 @@ figcaption {
 
 .receipe {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .receipe > a:hover {
@@ -95,15 +100,14 @@ figcaption {
 }
 
 .receipe > a > figure {
-    display: inline-block;
-    width: fit-content;
-    height: auto;
-    border: none;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .receipe > a > figure > img {
     width: 100%;
     border-radius: 50%;
+    margin: 0 auto;
 }
 
 .receipe > a > figure > figcaption {
@@ -122,16 +126,22 @@ footer > section {
 
 footer > h4 {
     margin: 0;
-    /* border: 1px solid red; */
-    font-size: 10rem;
+    font-size: 7rem;
     font-weight: lighter;
     color:rgb(255, 195, 43);
 }
 
 footer h5 , footer p {
     font-family: monospace;
-    font-size: xx-large;
     color: white;
+}
+
+footer h5 {
+    font-size: x-large;
+}
+
+footer p {
+    font-size: large;
 }
 
 #name {
