@@ -1,20 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+
 body {
     padding: 0 3%;
 }
 
 header {
-    font-size: 0.8rem;
+    font-size: 2rem;
 }
 
 header > p {
     margin: 0;
 }
 
+header > .nav > h2 {
+    margin: 0;
+    padding: 0;
+}
+
 header > .nav > h2, marquee {
     color:blueviolet;
-    font-family: monospace;
+    font-family: 'Tilt Prism', cursive;
     font-weight: lighter;
 }
 
@@ -36,8 +43,14 @@ nav a {
     color: black;
     display: inline-block;
     font-family: monospace;
-    font-size: large;
-    margin: 0 0.3rem;
+    font-size: xx-large;
+    margin: 0 1rem;
+}
+
+nav a:hover {
+    text-decoration: none;
+    border-bottom: 0.1rem solid blueviolet;
+    transform: scale(1.2);
 }
 
 h2 > span, footer > section > h4 {
@@ -50,11 +63,11 @@ header > p {
 
 .bio {
     font-family: monospace;
-    font-size: large;
+    font-size: 1.8rem;
 }
 .styledText {
     font-family: 'Cedarville Cursive', cursive;
-    font-size: x-large;
+    font-size: 3rem;
     font-weight: lighter;
     color:blueviolet;
 }
