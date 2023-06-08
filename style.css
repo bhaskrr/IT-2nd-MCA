@@ -244,7 +244,11 @@ marquee {
         display: grid;
         grid-template-columns: 30% 30% 30%;
     }
-
+    
+    .receipe > a > figure > figcaption {
+        font-size: 0.7rem;
+    }
+    
     footer > section >  h4 {
         margin: 0;
         font-size: 3rem;
