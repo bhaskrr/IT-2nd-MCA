@@ -257,6 +257,10 @@ marquee {
     .bio {
         font-size: 1rem;
     }
+    
+    .styledText {
+        font-size: 2rem;
+    }
 
     nav a, footer > section > h5 {
         font-size: medium;
