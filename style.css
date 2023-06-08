@@ -35,6 +35,13 @@ nav {
     align-items: center;
 }
 
+.logo {
+    border: 3px solid blueviolet;
+    border-radius: 50%;
+    width: 8%;
+    padding: 3px;
+}
+
 a {
     text-decoration: none;
 }
@@ -47,8 +54,10 @@ nav a {
     margin: 0 1rem;
 }
 
+
 nav a:hover {
     text-decoration: none;
+    color: blueviolet;
     border-bottom: 0.1rem solid blueviolet;
     transform: scale(1.2);
 }
@@ -74,12 +83,13 @@ header > p {
 
 .showcase {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    /* align-items: center; */
 }
 
 .showcase > figure {
-    width: 70%;
-    margin: 0 auto;
+    width: 22%;
+    cursor: pointer;
 }
 
 .showcase > figure > img {
@@ -91,7 +101,10 @@ header > p {
 figure {
     margin: 0;
     display: block;
-    /* border: 1px dotted gray; */
+}
+
+figure:hover {
+    transform: scale(1.1);
 }
 
 figcaption { 
@@ -131,7 +144,7 @@ figcaption {
 footer {
     background-color: gray;
     text-align: center;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
 }
 
 footer > section {
@@ -151,8 +164,9 @@ footer h5 , footer p {
 }
 
 footer > section > h5 {
+    font-family:monospace;
     margin: 0;
-    font-size: large;
+    font-size: 1.5rem;
 }
 
 footer p {
@@ -160,27 +174,36 @@ footer p {
 }
 
 #name {
-    padding: 1%;
-    width: 15rem;
+    padding: 0.5rem;
+    width: 14rem;
 }
 
 #mail {
-    padding: 1%;
+    padding: 0.5rem;
     width: 11rem;
+}
+
+#name, #mail {
+    outline: none;
 }
 
 #go {
     background-color:rgb(255, 195, 43);
     color: white;
+    cursor: pointer;
     font-weight: bolder;
     border: none;
-    padding: 1%;
-    width: 3.6rem;
+    padding: 0.6rem;
+    text-align: center;
 }
 
 form {
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
+}
+
+.credits {
+    font-size: small;
 }
 
 marquee {
@@ -201,8 +224,15 @@ marquee {
         justify-content: center;
     }
 
+    .styledText {
+        font-size: 2rem;
+    }
+
     .showcase {
-        display: block;
+        display: grid;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 2;
+        row-gap: 1rem;
     }
 
     .showcase > figure {
@@ -211,7 +241,8 @@ marquee {
     }
 
     .receipe {
-        display: block;
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
     }
 
     footer > section >  h4 {
@@ -219,7 +250,11 @@ marquee {
         font-size: 3rem;
     }
 
-    .bio, nav a, footer > section > h5 {
+    .bio {
+        font-size: 1.2rem;
+    }
+
+    nav a, footer > section > h5 {
         font-size: medium;
     }
 
