@@ -187,6 +187,10 @@ marquee {
         justify-content: center;
     }
 
+    nav a {
+        font-size: medium;
+    }
+
     .showcase {
         display: block;
     }
