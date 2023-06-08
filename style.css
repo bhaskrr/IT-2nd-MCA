@@ -118,11 +118,7 @@ figcaption {
 footer {
     background-color: gray;
     text-align: center;
-    padding-bottom: 5%;
-}
-
-footer > section {
-    padding: 1% 3%;
+    padding-bottom: 15%;
 }
 
 footer > h4 {
@@ -133,6 +129,7 @@ footer > h4 {
 }
 
 footer h5 , footer p {
+    /* margin: 0; */
     font-family: monospace;
     color: white;
 }
@@ -161,14 +158,47 @@ footer p {
     font-weight: bolder;
     border: none;
     padding: 1%;
-    width: 3.5rem;
+    width: 3.6rem;
 }
 
-form > section {
-    display: flex;
-    justify-content: center;
+form {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
 }
 
 marquee {
     font-size: x-large;
+}
+
+@media (max-width: 600px){
+    body {
+        padding: 0 0.5%;
+    }
+
+    .nav {
+        display: block;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .showcase {
+        display: block;
+    }
+
+    .showcase > figure {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .receipe {
+        display: block;
+    }
+
+    footer > h4 {
+        margin: 0;
+        font-size: 4rem;
+    }
 }
